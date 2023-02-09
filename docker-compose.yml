@@ -13,7 +13,7 @@ services:
     ports:
       - "8081:8080"
     volumes:
-      - data:/usr/local/tomcat/webapps/  
+      - mycalcwebapp.war:/usr/local/tomcat/webapps/mycalcwebapp.war  
     depends_on:
       - cal
 
