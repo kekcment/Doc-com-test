@@ -6,14 +6,14 @@ services:
     ports:
       - "8079:8080"
     volumes:
-      - ./data:/tmp/calculator-servlet-example/target/mycalcwebapp.war 
+      - ./data/mycalcwebapp.war :/tmp/calculator-servlet-example/target/mycalcwebapp.war 
 
   alp:      
     build: alp
     ports:
       - "8081:8080"
     volumes:
-      - ./data:/usr/local/tomcat/webapps/ 
+      - ./data/mycalcwebapp.war:/usr/local/tomcat/webapps/mycalcwebapp.war
     depends_on:
       - cal
 
