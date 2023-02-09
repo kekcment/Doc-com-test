@@ -6,7 +6,7 @@ services:
     ports:
       - "8079:8080"
     volumes:
-      - ./data:/usr/local/tomcat/webapps/
+      - data:/usr/local/tomcat/webapps/
 
   alp:      
     build: alp
