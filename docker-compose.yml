@@ -14,6 +14,8 @@ services:
       - "8070:8080"
     volumes:
       - ./data:/tmp/dta
+    depends_on:
+      - cal
 
 volumes:
  cal:
