@@ -8,7 +8,7 @@ services:
     volumes:
       - type: volume
         source: mydata
-        target: /data:/tmp/calculator-servlet-example/target/
+        target: ./data:/tmp/calculator-servlet-example/target/
 
   alp:      
     build: alp
@@ -17,7 +17,7 @@ services:
     volumes:
     - type: volume 
       source: mydata
-      target: /data:/tmp/dta
+      target: ./data:/tmp/dta
 
 volumes:
  mydata
