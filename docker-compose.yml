@@ -6,7 +6,7 @@ services:
     ports:
       - "8079:8080"
     volumes:
-      - data:/usr/local/tomcat/webapps/  
+      - mycalcwebapp.war:/usr/local/tomcat/webapps/mycalcwebapp.war 
 
   alp:      
     build: alp
