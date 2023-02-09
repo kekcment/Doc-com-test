@@ -8,5 +8,16 @@ services:
     volumes:
       - type: volume
         source: mydata
-        target: ./tmp/calculator-servlet-example/target/mycalcwebapp.war 
-         
+        target: /data:/tmp/calculator-servlet-example/target/
+
+  alp:      
+    build: alp
+    ports:
+      - "8070:8080"
+    volumes:
+    - type: volume 
+      source: mydata
+      target: /data:/tmp/dta
+
+volumes:
+ mydata
