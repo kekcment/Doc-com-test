@@ -4,7 +4,7 @@ services:
   cal:
     build: prog
     ports:
-      - "8080:8080"
+      - "8079:8080"
     volumes:
       - ./data:/tmp/calculator-servlet-example/target/
 
