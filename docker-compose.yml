@@ -6,7 +6,7 @@ services:
     ports:
       - "8079:8080"
     volumes:
-      - ./data:/home/tomcat/apache-tomcat-9.0.10/webapps/
+      - ./data:/tmp/calculator-servlet-example/target/
 
   alp:      
     build: alp
