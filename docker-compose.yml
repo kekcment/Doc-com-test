@@ -3,20 +3,20 @@ version: '3.7'
 services:
   cal:
     build: prog
-    ports:
-      - "8079:8080"
+    #ports:
+     # - "8079:8080"
     volumes:
-      - ./data:/usr/local/tomcat/webapps/
+      #- ./usr/local/tomcat/webapps/:/usr/local/tomcat/webapps/
+      - /data:/tmp/calculator-servlet-example/target  
 
   alp:      
     build: tomcat:9.0
     ports:
       - "8081:8080"
     volumes:
-      - ./data:/usr/local/tomcat/webapps/
+      - /data:/usr/local/tomcat/webapps/
     depends_on:
       - cal
 
 volumes:
- cal:
- alp:
+ data:
