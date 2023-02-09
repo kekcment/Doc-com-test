@@ -10,7 +10,7 @@ services:
       - /data:/tmp/calculator-servlet-example/target/ 
 
   alp:      
-    build: tomcat:9.0
+    build: alp
     ports:
       - "8081:8080"
     volumes:
