@@ -6,7 +6,6 @@ services:
     #ports:
      # - "8079:8080"
     volumes:
-      #- ./usr/local/tomcat/webapps/:/usr/local/tomcat/webapps/
       - /data:/tmp/calculator-servlet-example/target/ 
 
   alp:      
