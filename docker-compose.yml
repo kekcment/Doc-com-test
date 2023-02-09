@@ -13,7 +13,7 @@ services:
     ports:
       - "8070:8080"
     volumes:
-      - ./data:/tmp/dta
+      - ./data:/opt/tomcat/webapps/
     depends_on:
       - cal
 
