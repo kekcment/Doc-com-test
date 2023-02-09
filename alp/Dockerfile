@@ -1,4 +1,4 @@
-FROM alpine:3.15
-RUN apk add tomcat:9.0
-EXPOSE 8080
-CMD [/bin/bash]
+FROM tomcat:9.0
+#RUN apk add tomcat:9.0
+#EXPOSE 8080
+#CMD [/bin/bash]
